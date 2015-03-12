@@ -1,22 +1,74 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
 body{
 	background-color: #2c3950;
+	padding: 0;
+	margin:0;
 }
 
 
 .left{
-	width:50%;
+	width:125px;
+	position: absolute;
+	top:1.5em;
+	left:2.25em;
+	transition: all 200ms linear;
 }
 
 .right{
-	width:50%;
+	width:125px;
+	position: absolute;
+	top:1.48em;
+	right:2.25em;
+		transition: all 200ms linear;
 }
 
 .brain{
-	width:15%;
+	width:46px;
+	position: absolute;
+	top:4em;
+	right:8.5em;
+	transition: all 200ms linear;
 }
 
-.body{
+.robody{
+	width: 320px;
+	padding-top: 4em;
+	display:block;
+}
 
+.robot{
+	position:relative;
+	margin: 0 auto;
+	width: 320px;
+	overflow: hidden;
+}
+
+header:hover .b{
+	top:2.80em;
+	right:8.5em;
+}
+
+header:hover .l{
+	top:1.5em;
+	left:0.05em;
+}
+
+header:hover .r{
+	top:1.48em;
+	right:0.05em;
+}
+
+
+
+header{
+	text-align: center;
 }
 
 h1{
@@ -24,4 +76,5 @@ h1{
 	color: white;
 	text-align: center;
 	padding: 1em 0;
+	margin:0;
 }
